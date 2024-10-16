@@ -40,7 +40,7 @@ docker compose up --force-recreate
 
 ## Run migration
 ```
-> docker exec -it property-management-php81-apache-1 bash
+> docker exec -it property-management-php82-apache-1 bash
 > cd app
 > php artisan key:generate
 > php artisan migrate
