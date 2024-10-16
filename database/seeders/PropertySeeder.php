@@ -18,7 +18,7 @@ class PropertySeeder extends Seeder
         Property::truncate();
         PropertyImage::truncate();
         
-        foreach (range(1, 10) as $propertyNumber) {
+        foreach (range(1, 100) as $propertyNumber) {
             $property = Property::factory()->create();
             $property->images()->saveMany(array_map(function ($imageNumber) use ($property) {
                 return new PropertyImage([
