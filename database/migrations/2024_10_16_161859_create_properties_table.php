@@ -20,7 +20,7 @@ return new class extends Migration
         Schema::create('properties', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('slug')->unique()->index();
+            $table->string('slug');
             $table->string('address');
             $table->string('description');
             $table->enum('type', array_column(PropertyType::cases(), 'value'))->index();

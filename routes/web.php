@@ -14,4 +14,7 @@ use App\Http\Controllers\PropertyController;
 |
 */
 
-Route::get('/', [PropertyController::class, 'showList'])->name('property.show-list');
+Route::get('/', [PropertyController::class, 'showList'])->name('property.list');
+Route::get('/create', [PropertyController::class, 'create'])->name('property.create');
+Route::get('/edit/{property}', [PropertyController::class, 'form'])->name('property.edit');
+Route::put('/update/{id}', [PropertyController::class, 'save'])->name('property.update');

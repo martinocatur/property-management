@@ -1,7 +1,7 @@
 <div class="card my-4 p-4">
     <div class="card-header d-flex justify-content-between align-items-center">
         <h5>{{ $property->name }}</h5>
-        <a href="#" class="btn btn-warning">Edit</a>
+        <a href="{{ route('property.edit', compact('property')) }}" class="btn btn-warning">Edit</a>
     </div>
     <div class="card-body">
         <div class="row mb-3">
