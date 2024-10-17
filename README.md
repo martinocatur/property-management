@@ -45,6 +45,10 @@ docker compose up --force-recreate
 > php artisan key:generate
 > php artisan migrate
 ```
+for first time setup, you need to run the seeder after migrate
+```
+> php artisan db:seed
+```
 
 ## Finish
 Your laravel should be up and running!
